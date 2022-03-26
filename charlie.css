@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Teko', sans-serif;
+   text-decoration: none;
+	list-style: none;
+    box-sizing: border-box;
+    transition: all 0.4s ease;;
+}
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url("loading.gif")
+	 no-repeat center center;	
+	z-index: 99999;}
+
+/* get it now button ki css hai ye */
+.getitnow {
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 73px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    -webkit-mask-size: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px)
+   }
+   
+   .getitnow:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+   }
+   
+   .getitnow:hover:after {
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+   }
+   
+   .getitnow span {
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 900;
+    left: 50%;
+    top: 39%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: black;
+    transition: all 2s ease;
+   }
+   
+   .getitnow:hover span {
+    color: white;
+   }
+   
+   .getitnow:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+   }
+   
+   .getitnow:hover:before {
+    width: 100%;
+   }
+   
+/* ye nav bar ki css hai */
+
+/* ===== Colours ===== */
+:root{
+    /* --body-color: #E4E9F7; */
+    --nav-color:#000000;
+    --side-nav: #000000;
+    --text-color: #FFF;
+   
+}
+
+body{
+    /* height: 100vh; */
+    background-color: var(--body-color);
+    
+}
+
+
+
+.navtud{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+body.dark .navtud{
+    border: 1px solid #393838;
+
+}
+
+.navtud .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    /* padding: 0 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navtud .nav-bar .sidebarOpen{
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.navtud .nav-bar .logo{
+   
+    text-decoration: none;
+	margin: auto;
+}
+
+.navtud .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+	margin: auto;
+}
+
+.menu .logo-toggle{
+    display: none;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    margin: 0 5px;
+    list-style: none;
+}
+
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before{
+    opacity: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .navtud .nav-bar .sidebarOpen{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    .navtud.active .menu{
+        left: -0%;
+    }
+
+    .navtud.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* ye charlie puth ki css hai */
+.bg video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    min-width:100% ;
+    min-height: 100%;
+    z-index: -999;
+}
+
+.cplogo{height: 100%;
+    width: 100%;
+   
+    /* float: left; */
+    margin-top: 0px;
+    /* margin-left: 1%; */
+}
+#who:hover{
+    
+    background-color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+
+}
+#who{
+    background-color: black;
+    color: white;
+    /* margin-left: 30%; */
+    clear: left;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 14px;
+    letter-spacing:0.2mm;
+    
+}
+#ldcp:hover{
+    clear: left;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+ 
+}
+#ldcp{
+    background-color: black;
+    color: white ;
+    clear: left;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:30px; 
+    padding: 3px;
+    letter-spacing:0.2mm;
+}
+ #homecp{
+    background-color: black;
+    color: white ;
+    clear: left;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:30px; 
+    padding: 3px; 
+    letter-spacing:0.2mm;
+    }
+    #homecp:hover{
+        clear: left;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  
+    }
+    #live{
+        background-color: black;
+        color: white ;
+        clear: left;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left:30px; 
+       padding: 3px; 
+        letter-spacing:0.2mm;
+    }
+#live:hover{
+    clear: left;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  
+}
+#lightbtn{
+        background-color: black;
+        text-decoration: none;
+        padding: 0.8rem;
+        color: white;
+        letter-spacing:1mm;
+    }
+    .icon{
+        float: left;
+        /* padding: 5px; */
+        text-align: center;
+        margin-left: 2em;
+        margin-top: 3%;
+        /* margin: auto; */
+    }
+    .fsocial{
+        content: "";
+        clear: both;
+        display: table;
+        text-align: center;
+        margin-top: 2%;
+        margin: auto;
+    }
+    
+
+/* YAHA SE ABOUT KI CSS HAI  */
+#cpd{
+   padding: 45px;
+}
+#cpa{
+    font-size:300%;
+    text-align: center;
+}
+#cpa1{
+    padding:50px ;
+    padding-top: 2px;
+} 
+p{
+    font-size: 15px;
+}
+
+#goback{
+    text-decoration: none;
+    color: black;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+   
+   
+}
+#goback:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    
+}
+/* yaha se misic+video ki css hai  */
+
+#mvcp{
+    font-size: 70px;
+    text-align: center;
+    /* letter-spacing: 1ch; */
+}
+#mval{
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: 1ch;   
+}
+.btnalblight{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid white;
+    margin-bottom: 2%;
+    background-color:  #302e2f;
+    color:#95694c;
+    border-radius: 8px;
+}
+.btnalb1{
+    text-decoration: none;
+      font-size: 25px;
+    padding:6px;
+    border: 4px solid black;
+    margin-bottom: 2%;
+    background-color: #87754D;
+    color: white;
+    border-radius: 8px;
+}
+.btnalb1:hover{
+    background-color: black;
+    color: white;
+}
+.btnalb2{
+text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid red;
+    margin-bottom: 2%;
+    background-color: black;
+    color: red;
+    border-radius: 8px;
+}
+.btnalb2:hover{
+    background-color: black;
+    color: white;
+}
+.btnalb3{
+    text-decoration: none;
+        font-size: 25px;
+        padding: 6px;
+        border: 4px solid black;
+        margin-bottom: 2%;
+        background-color: white;
+        color:black;
+        border-radius: 8px;
+    }
+    .btnalb3:hover{
+        background-color: black;
+        color: white;
+    }
+#download{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid black;
+    color:white;
+    background-color: green;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+#download:hover{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid black;
+    color:black;
+    background-color: white;
+    border-radius: 8px;
+    /* margin-left: 42%; */
+    /* text-align: center; */
+}
+
+#download1{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid black;
+    color:white;
+    background-color: rgb(238, 155, 2);
+    border-radius: 8px;
+    margin-top: 2%;
+}
+#download1:hover{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px;
+    border: 4px solid black;
+    color:black;
+    background-color: white;
+    border-radius: 8px;
+}
+/* ye voicenotes ka css hai */
+#vd{
+    font-size: 35px;
+    color: white;
+}
+#songs{
+    font-size: 30px;
+    /* border: 4px solid black; */
+}
+.audio{
+    color: black;
+    
+}
+.songname{
+    margin-top: 3%;
+    color: black;
+}
+
+/* yaha se nine track mind ki css hai */
+#ntm{
+    text-align: center;
+    font-size: 35px;
+}
+
+/* yaha se superhis ki css hai  */
+#super{
+    /* background-color: #87754D; */
+    /* color: white; */
+    border: 3px solid black;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2%;
+    text-align: center;
+    margin: auto;
+}
+/* YAHA SE LIVEEVENTS KI CSS HAI */
+#l{
+    text-align: center;
+}
+#gobackle{
+    background-color: black;
+    color: white ;
+    clear: left;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left:30px; 
+    padding: 3px; 
+    letter-spacing:0.2mm;
+}
+#gobackle:hover{
+clear: left;
+cursor: pointer;
+background-color: white;
+border: 2px solid black;
+color: black;
+padding:5px ;
+}
