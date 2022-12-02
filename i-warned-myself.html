@@ -2,24 +2,68 @@
 <html lang="en">
 
 <head>
-  <title>CHARLIE PUTH | Music + Video | I Warned Myself | Fan made website</title>
+  <title>CHARLIE PUTH | I Warned Myself | Fan made website</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
-  <!-- ye vo effect ka link hai filp  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <!-- my css -->
   <link rel="stylesheet" href="charlie.css">
   <!-- favicon -->
   <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- loader css -->
+  <style>
+    /* body{
+            background-color: black ;
+        }
+         */
+    #preloader {
+      height: 300px;
+      width: 300px;
+      position: absolute;
+      z-index: 100;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+    }
+
+    #preloader img {
+      width: 300px;
+    }
+
+    #fullpagecontent {
+      display: none;
+
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      document.getElementById('preloader').style.display = "none";
+      document.getElementById('fullpagecontent').style.display = "block";
+    }
+  </script>
+
 </head>
 
-<body class="no-sidebar is-preload">
-  <div id="page-wrapper">
+<body class="homepage ">
+
+  <div id="preloader">
+    <!-- <img src="photos/logoTUD.png" alt="loader"> -->
+    <!-- <h2> ooh ur still alive</h2> -->
+    <img src="loading.gif" alt="loader">
+  </div>
+  <!-- this is loader div for content -->
+  <div id="fullpagecontent">
+
+    <!-- <div id="page-wrapper"> -->
 
     <!-- Header -->
     <div id="header">
@@ -27,7 +71,7 @@
       <!-- Inner -->
       <div class="inner">
         <header>
-          <!-- <h1><a href="index.html" id="logo">CHARLIE PUTH</a></h1> -->
+          <h1><a href="#" id="logo">I Warned Myself</a></h1>
         </header>
       </div>
 
@@ -43,11 +87,16 @@
 
               <li>
                 <a href="#">Albums &#8594;</a>
+
                 <ul>
+                  <li><a href="CHARLIE.html">CHARLIE</a></li>
+                  <li><a href="leftandright.html">Left And Right (feat. Jung Kook of BTS)</a></li>
+                  <li><a href="thatshilarious.html">That's Hilarious</a></li>
                   <li><a href="lightswitch.html">Light Switch</a></li>
-                  <li><a href="single.html">Singles & Others</a></li>
                   <li><a href="hard-on-your-self.html">Hard On Yourself</a></li>
                   <li><a href="girlfriend.html">Girlfriend</a></li>
+                  <li><a href="free.html">Free</a></li>
+                  <li><a href="ihope.html">I hope</a></li>
                   <li><a href="mother.html">Mother</a></li>
                   <li><a href="cheating-on-you.html">Cheating On You</a></li>
                   <li><a href="i-warned-myself.html">I Warned Myself</a></li>
@@ -55,110 +104,97 @@
                   <li><a href="voicenotes.html">Voicenotes</a></li>
                   <li><a href="ninetrackmind.html">Nine Track Mind (Deluxe)</a></li>
                   <li><a href="sometypeoflove.html">Some Type Of Love EP</a></li>
-
+                  <li><a href="other.html">Other Albums</a></li>
                 </ul>
               </li>
-              <!-- <li><a href="#">Veroeros feugiat</a></li> -->
             </ul>
           </li>
-          <li><a href="liveevents.html">Live events</a></li>
-          <li><a href="https://www.charlieputh.com/" target="_blank">charlieputh.com</a></li>
+          <li><a href="writen-by-CP.html">Written By Charlie Puth</a></li>
+          <li><a href="https://www.charlieputh.com/" target="_blank">charlieputh.com</a>
+          </li>
         </ul>
       </nav>
 
     </div>
 
+    <div style="text-align: center; background-color: black;">
+      <h3 class="text-gray-100 text-lg py-px">1.Charlie Puth – I Warned Myself [Official Video]</h3>
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/wjIes1eGAw4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-    </nav>
-    <div style="text-align: center;">
-      <img style=" margin: auto;text-align: center;" src="cpphotos/CHARLIE_PUTH_LOGO.png" alt="CHARLIE PUTH">
-    </div>
+      <div style="text-align: center; margin-top: 1%; margin: auto;">
 
-
-    <video width="100%" height="150%" class="bg video" autoplay muted loop>
-      <source src="cpvideo/cpmv.mp4" type="video/mp4">
-    </video>
-
-    <div style="text-align: center; margin-top: 20px;">
-      <!-- <a id="lightbtn" href="https://charlieputh.lnk.to/LightSwitchAW"target="_blank">PRE-SAVE LIGHTSWITCH</a><br> -->
-      <img style="margin-top: 25px; margin: auto;" src="cpphotos/CHARLIE_PUTH_LOGO.png" alt="CHARLIE PUTH">
-    </div>
-
-
-    <div style="text-align: center;" data-aos="zoom-in-up">
-        <h3 class="">1.Charlie Puth – I Warned Myself [Official Video]</h3>
-        <iframe width="100%" height="480" src="https://www.youtube.com/embed/wjIes1eGAw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <div style="text-align: center; margin-top: 1%; margin: auto;">
-
-            <a href="https://charlieputh.lnk.to/iwarnedmyselfAW" target="_blank">
-                <button class="getitnow">
-                    <span>GET IT NOW</a></span>
-            </button>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-
-        </div>
-        <!-- <hr /> -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- Contact -->
-            <section class="contact">
-              <div style="text-align: center;">
-                <h5 style="text-align: center;">Music,video & images are subject to copyright.</h5>
-                <h5 style="text-align: center; ">© 2022
-                  <a href="https://www.charlieputh.com/" target="_blank" style="color: rgb(0, 0, 255);">
-                    CHARLIE PUTH</a>
-                  <h5 style="text-align: center;">℗ 2022 Atlantic Records Group LLC.</h5>
-                </h5>
-              </div>
-              <!-- <header>
-                    <h3>Nisl turpis nascetur interdum?</h3>
-                  </header>
-                  <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p> -->
-              <ul class="icons">
-                <li><a href="https://twitter.com/charlieputh" target="_blank" class="icon brands fa-twitter"><span
-                      class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/charlieputh" target="_blank"
-                    class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/charlieputh/" target="_blank"
-                    class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <!-- <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li> -->
-              </ul>
-            </section>
-
-            <!-- Copyright -->
-            <div class="copyright">
-              <ul>
-                <li>Copyright &copy; 2021-2022 <a style="color: white;" href="https://theuniversaldev.42web.io/">THE
-                    UNIVERSAL DEV</a>.<br> All rights reserved.</li>
-                <li>Designed, Developed & Maintained by :<br> <a style="color: white;"
-                    href="https://theuniversaldev.42web.io/">THE UNIVERSAL DEV</a></li>
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
+        <a href="https://charlieputh.lnk.to/iwarnedmyselfAW" target="_blank">
+          <button class="getitnow">
+            <span>GET IT NOW</a></span>
+        </button>
       </div>
     </div>
 
+
+
+
+    <!-- footer -->
+
+    <div style="background-color: black;" class="flex items-center justify-center">
+      <div class="m-2 max-w-5xl items-center">
+        <div class="flex flex-col items-center"> <img style="width: 10rem;" class="flex m-1"
+            src="images/charlie_white_0.png" />
+          <div class="m-2" 0>
+
+            <a href="https://www.facebook.com/charlieputh" target="_blank"
+              class="w-9 h-10 text-center border-current border-2 text-blue-500 hover:text-black pt-1 inline-block"><img
+                src="cpphotos/logos/Facebook-logo.png" alt=""></a>
+
+            <a href="https://www.instagram.com/charlieputh/" target="_blank"
+              class="w-9 h-10 text-center border-current border-2 text-rose-400 hover:text-black pt-1 inline-block"><img
+                src="cpphotos/logos/Instagram-Logo-removebg-preview.png" alt=""></a>
+
+            <a href="https://twitter.com/charlieputh" target="_blank"
+              class="w-9 h-10 text-center border-current border-2 text-blue-400 hover:text-black pt-1 inline-block"><img
+                src="cpphotos/logos/Twitter-logo-removebg-preview.png" alt=""></a>
+
+            <a href="https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7" target="_blank"
+              class="w-9 h-10 text-center border-current border-2 text-green-500 hover:text-black pt-1 inline-block"><img
+                src="cpphotos/logos/Spotify-logo.png" alt=""></a>
+
+            <a href="https://music.apple.com/in/artist/336249253?ign-itscg=30440&ign-itsct=catchall_p1&uo=4"
+              target="_blank"
+              class="w-9 h-10 text-center border-current border-2 text-rose-600 hover:text-black pt-1 inline-block"><img
+                src="cpphotos/logos/apple-music-removebg-preview.png" alt=""></a>
+
+
+          </div>
+          <div class="flex md:flex-row flex-col">
+            <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="index.html">Home</a> </p>
+            <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="charlieputhbio.html">Bio</a> </p>
+            <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="musicvideo.html">Music +
+                Video</a> </p>
+            <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="https://www.theuniversaldev.42web.io"
+                target="_blank">Contact Us</a> </p>
+            <!-- <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="#"> Privacy Policy </a> </p> -->
+          </div>
+          <div style="text-align: center;" class="text-gray-100 font-medium mt-4 text-xs">&copy;
+            <script>document.write("" + new Date().getFullYear(), "");</script>
+            <a href="https://www.charlieputh.com" target="_blank" class="text-blue-600">Charlie Puth</a>
+            <br>
+            <h1 class="text-gray-100">All credits to Charlie & his team.</h1>
+            &copy;
+            <script>document.write("" + new Date().getFullYear(), "");</script>
+            <a href="https://www.theuniversaldev.42web.io" target="_blank" class="text-blue-600">THE
+              UNIVERSAL DEV &trade;</a>
+            <h1 class="text-gray-100">All rights reserved</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
   </div>
-  <!-- ye script effect ki hai  -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 200, duration: 700
-    });
-  </script>
+
+
 
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>

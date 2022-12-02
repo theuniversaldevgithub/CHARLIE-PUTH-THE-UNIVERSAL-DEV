@@ -9,17 +9,61 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	<!-- ye vo effect ka link hai filp  -->
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<!-- my css -->
 	<link rel="stylesheet" href="charlie.css">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<!-- tailwind cdn -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- loader css -->
+	<style>
+		/* body{
+            background-color: black ;
+        }
+         */
+		#preloader {
+			height: 300px;
+			width: 300px;
+			position: absolute;
+			z-index: 100;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+		}
+
+		#preloader img {
+			width: 300px;
+		}
+
+		#fullpagecontent {
+			display: none;
+
+		}
+	</style>
+	<script>
+		window.onload = function () {
+			document.getElementById('preloader').style.display = "none";
+			document.getElementById('fullpagecontent').style.display = "block";
+		}
+	</script>
+
 </head>
 
-<body class="no-sidebar is-preload">
-	<div id="page-wrapper">
+<body class="homepage ">
+
+	<div id="preloader">
+		<!-- <img src="photos/logoTUD.png" alt="loader"> -->
+		<!-- <h2> ooh ur still alive</h2> -->
+		<img src="loading.gif" alt="loader">
+	</div>
+	<!-- this is loader div for content -->
+	<div id="fullpagecontent">
+
+		<!-- <div id="page-wrapper"> -->
 
 		<!-- Header -->
 		<div id="header">
@@ -27,7 +71,7 @@
 			<!-- Inner -->
 			<div class="inner">
 				<header>
-					<h1><a href="index.html" id="logo">CHARLIE PUTH</a></h1>
+					<h1><a href="#" id="logo">Bio</a></h1>
 				</header>
 			</div>
 
@@ -43,11 +87,16 @@
 
 							<li>
 								<a href="#">Albums &#8594;</a>
+
 								<ul>
+									<li><a href="CHARLIE.html">CHARLIE</a></li>
+									<li><a href="leftandright.html">Left And Right (feat. Jung Kook of BTS)</a></li>
+									<li><a href="thatshilarious.html">That's Hilarious</a></li>
 									<li><a href="lightswitch.html">Light Switch</a></li>
-									<li><a href="single.html">Singles & Others</a></li>
 									<li><a href="hard-on-your-self.html">Hard On Yourself</a></li>
 									<li><a href="girlfriend.html">Girlfriend</a></li>
+									<li><a href="free.html">Free</a></li>
+									<li><a href="ihope.html">I hope</a></li>
 									<li><a href="mother.html">Mother</a></li>
 									<li><a href="cheating-on-you.html">Cheating On You</a></li>
 									<li><a href="i-warned-myself.html">I Warned Myself</a></li>
@@ -55,335 +104,153 @@
 									<li><a href="voicenotes.html">Voicenotes</a></li>
 									<li><a href="ninetrackmind.html">Nine Track Mind (Deluxe)</a></li>
 									<li><a href="sometypeoflove.html">Some Type Of Love EP</a></li>
-
+									<li><a href="other.html">Other Albums</a></li>
 								</ul>
 							</li>
-							<!-- <li><a href="#">Veroeros feugiat</a></li> -->
 						</ul>
 					</li>
-					<li><a href="liveevents.html">Live events</a></li>
-					<li><a href="https://www.charlieputh.com/" target="_blank">charlieputh.com</a></li>
+					<li><a href="writen-by-CP.html">Written By Charlie Puth</a></li>
+					<li><a href="https://www.charlieputh.com/" target="_blank">charlieputh.com</a>
+					</li>
 				</ul>
 			</nav>
 
 		</div>
 
-		<!-- Main -->
+
 		<div class="wrapper style1">
+			<!-- Main -->
 
 			<div class="container">
 				<article id="main" class="special">
 					<header>
-						<h2><a href="#">CHARLIE PUTH</a></h2>
+						<h2><a style="color: white;" href="#">CHARLIE PUTH</a></h2>
 						<p>
 							Charles Otto Puth Jr. (born December 2, 1991) is an American singer, songwriter, and
 							record producer. His initial exposure came through the viral success of his song
 							videos uploaded to YouTube.
 						</p>
 					</header>
-					<a href="#" class="image featured"><img src="cpphotos/cp.jpg" alt="charlieputh" /></a>
+					<!-- <a href="#" class="image featured"> -->
+					<img style="width: 100%;" src="cpphotos/cp.jpg" alt="charlieputh">
 					<section>
 						<header>
-							<h3><b>Voicenotes</b></h3>
+							<h3><b style="color: white; padding: 20px;">Biography</b></h3>
 						</header>
-						<p>
+						<p style="padding: 20px;">
+
 							Over the past three years, Charlie Puth has proven himself commercially with the
-							extraordinary success of four
-							multi-platinum hits, "One Call Away," "Marvin Gaye," and "We Don’t Talk Anymore" from his
-							platinum-selling, Top 10
-							debut album Nine Track Mind, as well as his breakout hit "See You Again" — the best-selling
-							song of 2015 worldwide
-							that spent 12 weeks atop the Billboard Hot 100, earned him three Grammy nominations
-							(including Song of the Year),
-							a Golden Globe nomination, and 9x-platinum certification in the U.S. But the New Jersey-born
-							singer, songwriter,
-							musician, and producer was also eager to prove himself artistically when it came time to
-							make his second album,
-							Voicenotes, named after the trusty iPhone app he uses to collect his musical ideas. Puth
-							co-wrote every song and
-							recorded and produced the album entirely himself (barring one song he co-produced with Max
-							Martin) mainly at his
-							home studio in Los Angeles.
+							extraordinary success of four multi-platinum hits, “One Call Away,” “Marvin Gaye,” and “We
+							Don’t Talk Anymore” from his platinum-selling, Top 10 debut album Nine Track Mind, as well
+							as his breakout hit “See You Again” — the best-selling song of 2015 worldwide that spent 12
+							weeks atop the Billboard Hot 100, earned him three Grammy nominations (including Song of the
+							Year), a Golden Globe nomination, and 9x-platinum certification in the U.S. But the New
+							Jersey-born singer, songwriter, musician, and producer was also eager to prove himself
+							artistically when it came time to make his second album, Voicenotes, named after the trusty
+							iPhone app he uses to collect his musical ideas. Puth co-wrote every song and recorded and
+							produced the album entirely himself (barring one song he co- produced with Max Martin)
+							mainly at his home studio in Los Angeles.
 							<br>
+
 							A meticulously crafted game-changer replete with sparkling melodies and sleek, danceable
-							grooves, Voicenotes
-							decimates everything people may think they know about this musical polymath, who has not
-							only written and produced
-							his own massive hits, but also for other artists spanning a range of genres, including Jason
-							Derulo, Trey Songz,
-							Thomas Rhett, Maroon 5, and G-Eazy. On Voicenotes, Puth allows himself to truly be seen, not
-							only as an artist but
-							also as a human, which meant stepping out from behind the detached façade of lovelorn
-							balladeering and being
-							transparent about his emotions and influences.
+							grooves, Voicenotes decimates everything people may think they know about this musical
+							polymath, who has not only written and produced his own massive hits, but also for other
+							artists spanning a range of genres, including Jason Derulo, Trey Songz, Thomas Rhett, Maroon
+							5, and G-Eazy. On Voicenotes, Puth allows himself to truly be seen, not only as an artist
+							but also as a human, which meant stepping out from behind the detached façade of lovelorn
+							balladeering and being transparent about his emotions and influences.
 							<br>
+
 							On the lyrical front, Voicenotes is an album that is largely about Puth’s struggle to find a
-							normal relationship
-							when his own life has hardly been normal since finding multiplatinum success, and the
-							anxiety that pursuit has
-							induced. "I wanted it to be a story of my travels from the East Coast to the West Coast and
-							how my growing fame
-							has affected my mind in good and bad ways," he says. The first three singles — "Attention,"
-							"How Long," and "Done
-							For Me" featuring Kehlani — cover that territory. "Whenever I met anybody, they often knew
-							more about me than I
-							knew about myself," he says. "I’d never dealt with anything like that before." Songs like
-							"LA Girls," "Like A
-							Boy," and "Slow It Down" detail different aspects of the rarified life of someone who feels
-							like he should be
-							enjoying the glittering lifestyle of fabulous parties and ample romantic opportunities, but
-							just doesn’t —
-							something Puth addresses on self-acceptance anthem "The Way I Am," which opens with the
-							following lines: "Maybe
-							I’m a get a little anxious / Maybe I’m a get a little shy / Cuz everybody’s trying to be
-							famous / And I’m just
-							trying to find a place to hide").
+							normal relationship when his own life has hardly been normal since finding multiplatinum
+							success, and the anxiety that pursuit has induced. “I wanted it to be a story of my travels
+							from the East Coast to the West Coast and how my growing fame has affected my mind in good
+							and bad ways,” he says. The first three singles — “Attention,” “How Long,” and “Done For Me”
+							featuring Kehlani — cover that territory. “Whenever I met anybody, they often knew more
+							about me than I knew about myself,” he says. “I’d never dealt with anything like that
+							before.” Songs like “LA Girls,” “Like A Boy,” and “Slow It Down” detail different aspects of
+							the rarified life of someone who feels like he should be enjoying the glittering lifestyle
+							of fabulous parties and ample romantic opportunities, but just doesn’t — something Puth
+							addresses on self-acceptance anthem “The Way I Am,” which opens with the following lines:
+							“Maybe I’m a get a little anxious / Maybe I’m a get a little shy / Cuz everybody’s trying to
+							be famous / And I’m just trying to find a place to hide”).
 							<br>
-							"I thought I was supposed to go to all these parties and be this type of person so I’ve
-							always shoved my anxiety
-							under the carpet because I didn’t think anyone cared to hear about it," he says. “This album
-							touches on that, but
-							I also wanted to make sure that these songs, at the end of the day, are fun because some
-							people choose not to
-							listen to the lyrics. They just want to go to the club, listen to the beat, and have a great
-							time. And that’s
-							totally fine, too."
-							<br>
-							To achieve his goal of making people want to “dance and cry at the same time,” Puth allowed
-							his love for jazz and
-							late ’80s/early ’90s R&B to shine through, which upped the music’s sophistication level
-							several notches.
-							Voicenotes’ up-tempo, groove-minded songs like “Attention," “How Long," “Done For Me," and
-							"The Way I Am" are so
-							effortlessly catchy that they seem simple on the surface, but are hardly that. Puth, whose
-							perfect pitch means he
-							is often distracted by identifying the notes sounded by passing car horns and leaf-blowers,
-							began studying jazz at
-							age 10 and attended both the Manhattan School of Music Pre-College, where he majored in jazz
-							piano, and Berklee
-							College of Music, where he graduated with a degree in music production and engineering. His
-							classical training is
-							on full display, along with his impeccable influences — which range from jazz greats Miles
-							Davis, John Coltrane,
-							and Bill Evans to R&B songwriter-producers Babyface, Jimmy Jam and Terry Lewis, and Teddy
-							Riley.
-							<br>
-							"I was influenced by artists who were proving something when they broke off from their
-							groups," Puth says, citing
-							Bobby Brown and Ralph Tresvant after New Edition, Steve Perry after Journey, and George
-							Michael after Wham!. "When
-							George left Wham! he wanted to show the world that he could produce records like ‘Careless
-							Whisper’ and ‘Father
-							Figure’ on his own," Puth says. "He didn’t do it in vengeful way. He was just showing people
-							how musical he was.
-							That was really my goal as well." Puth’s musical heroes turn up on two of Voicenotes’
-							tracks, "If You Leave Me
-							Now," featuring Boys II Men ("What they sent me was perfect; it was the first time I didn’t
-							have to do anything to
-							finish a song") and "Change," featuring his idol James Taylor ("I never thought I’d be able
-							to do a song with him
-							and when I met him, it confirmed in my mind that I want to have a career just like his").
-							<br>
-							Audiences have embraced Puth’s bold new direction. "Attention,” which the New York Times pop
-							critic Jon Caramanica
-							listed fourth on his year-end list of "Best Songs of 2017," climbed to No. 5 on the
-							Billboard Hot 100 (Puth’s
-							highest-charting single as a solo artist), hit No. 1 on both the Top 40 and Hot AC radio
-							charts, and his been
-							certified double-platinum, while the funky, cheating-ex song "How Long" hit No. 3 at Top 40
-							radio and has been
-							certified platinum.
-							<br>
-							For all of his success, Puth still sees himself as the kid from Rumson who played organ in
-							church and made
-							mixtapes for the girls at school. "I still have the same deep infatuation with chord
-							changes, girls, and food,” he
-							says. "Nothing’s really changed. I still find myself to be a pretty humble guy. Every room I
-							walk into I think I’m
-							the worst songwriter and I have to prove myself. But it’s because of that that I get
-							better.” Over the past three years, Charlie Puth has proven himself commercially with the
-							extraordinary success of four
-							multi-platinum hits, "One Call Away," "Marvin Gaye," and "We Don’t Talk Anymore" from his
-							platinum-selling, Top 10
-							debut album Nine Track Mind, as well as his breakout hit "See You Again" — the best-selling
-							song of 2015 worldwide
-							that spent 12 weeks atop the Billboard Hot 100, earned him three Grammy nominations
-							(including Song of the Year),
-							a Golden Globe nomination, and 9x-platinum certification in the U.S. But the New Jersey-born
-							singer, songwriter,
-							musician, and producer was also eager to prove himself artistically when it came time to
-							make his second album,
-							Voicenotes, named after the trusty iPhone app he uses to collect his musical ideas. Puth
-							co-wrote every song and
-							recorded and produced the album entirely himself (barring one song he co-produced with Max
-							Martin) mainly at his
-							home studio in Los Angeles.
-							<br>
-							A meticulously crafted game-changer replete with sparkling melodies and sleek, danceable
-							grooves, Voicenotes
-							decimates everything people may think they know about this musical polymath, who has not
-							only written and produced
-							his own massive hits, but also for other artists spanning a range of genres, including Jason
-							Derulo, Trey Songz,
-							Thomas Rhett, Maroon 5, and G-Eazy. On Voicenotes, Puth allows himself to truly be seen, not
-							only as an artist but
-							also as a human, which meant stepping out from behind the detached façade of lovelorn
-							balladeering and being
-							transparent about his emotions and influences.
-							<br>
-							On the lyrical front, Voicenotes is an album that is largely about Puth’s struggle to find a
-							normal relationship
-							when his own life has hardly been normal since finding multiplatinum success, and the
-							anxiety that pursuit has
-							induced. "I wanted it to be a story of my travels from the East Coast to the West Coast and
-							how my growing fame
-							has affected my mind in good and bad ways," he says. The first three singles — "Attention,"
-							"How Long," and "Done
-							For Me" featuring Kehlani — cover that territory. "Whenever I met anybody, they often knew
-							more about me than I
-							knew about myself," he says. "I’d never dealt with anything like that before." Songs like
-							"LA Girls," "Like A
-							Boy," and "Slow It Down" detail different aspects of the rarified life of someone who feels
-							like he should be
-							enjoying the glittering lifestyle of fabulous parties and ample romantic opportunities, but
-							just doesn’t —
-							something Puth addresses on self-acceptance anthem "The Way I Am," which opens with the
-							following lines: "Maybe
-							I’m a get a little anxious / Maybe I’m a get a little shy / Cuz everybody’s trying to be
-							famous / And I’m just
-							trying to find a place to hide").
-							<br>
-							"I thought I was supposed to go to all these parties and be this type of person so I’ve
-							always shoved my anxiety
-							under the carpet because I didn’t think anyone cared to hear about it," he says. “This album
-							touches on that, but
-							I also wanted to make sure that these songs, at the end of the day, are fun because some
-							people choose not to
-							listen to the lyrics. They just want to go to the club, listen to the beat, and have a great
-							time. And that’s
-							totally fine, too."
-							<br>
-							To achieve his goal of making people want to “dance and cry at the same time,” Puth allowed
-							his love for jazz and
-							late ’80s/early ’90s R&B to shine through, which upped the music’s sophistication level
-							several notches.
-							Voicenotes’ up-tempo, groove-minded songs like “Attention," “How Long," “Done For Me," and
-							"The Way I Am" are so
-							effortlessly catchy that they seem simple on the surface, but are hardly that. Puth, whose
-							perfect pitch means he
-							is often distracted by identifying the notes sounded by passing car horns and leaf-blowers,
-							began studying jazz at
-							age 10 and attended both the Manhattan School of Music Pre-College, where he majored in jazz
-							piano, and Berklee
-							College of Music, where he graduated with a degree in music production and engineering. His
-							classical training is
-							on full display, along with his impeccable influences — which range from jazz greats Miles
-							Davis, John Coltrane,
-							and Bill Evans to R&B songwriter-producers Babyface, Jimmy Jam and Terry Lewis, and Teddy
-							Riley.
-							<br>
-							"I was influenced by artists who were proving something when they broke off from their
-							groups," Puth says, citing
-							Bobby Brown and Ralph Tresvant after New Edition, Steve Perry after Journey, and George
-							Michael after Wham!. "When
-							George left Wham! he wanted to show the world that he could produce records like ‘Careless
-							Whisper’ and ‘Father
-							Figure’ on his own," Puth says. "He didn’t do it in vengeful way. He was just showing people
-							how musical he was.
-							That was really my goal as well." Puth’s musical heroes turn up on two of Voicenotes’
-							tracks, "If You Leave Me
-							Now," featuring Boys II Men ("What they sent me was perfect; it was the first time I didn’t
-							have to do anything to
-							finish a song") and "Change," featuring his idol James Taylor ("I never thought I’d be able
-							to do a song with him
-							and when I met him, it confirmed in my mind that I want to have a career just like his").
-							<br>
-							Audiences have embraced Puth’s bold new direction. "Attention,” which the New York Times pop
-							critic Jon Caramanica
-							listed fourth on his year-end list of "Best Songs of 2017," climbed to No. 5 on the
-							Billboard Hot 100 (Puth’s
-							highest-charting single as a solo artist), hit No. 1 on both the Top 40 and Hot AC radio
-							charts, and his been
-							certified double-platinum, while the funky, cheating-ex song "How Long" hit No. 3 at Top 40
-							radio and has been
-							certified platinum.
-							<br>
-							For all of his success, Puth still sees himself as the kid from Rumson who played organ in
-							church and made
-							mixtapes for the girls at school. "I still have the same deep infatuation with chord
-							changes, girls, and food,” he
-							says. "Nothing’s really changed. I still find myself to be a pretty humble guy. Every room I
-							walk into I think I’m
-							the worst songwriter and I have to prove myself. But it’s because of that that I get
-							better.”
+
+							“I thought I was supposed to go to all these parties and be this type of person so I’ve
+							always shoved my anxiety under the carpet because I didn’t think anyone cared to hear about
+							it,” he says. “This album touches on that, but I also wanted to make sure that these songs,
+							at the end of the day, are fun because some people choose not to listen to the lyrics. They
+							just want to go to the club, listen to the beat, and have a great time. And that’s totally
+							fine, too.”
+
+
 						</p>
 				</article>
 			</div>
 		</div>
 
-	</div>
+		<!-- footer -->
 
-	<!-- Footer -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
+		<div style="background-color: black;" class="flex items-center justify-center">
+			<div class="m-2 max-w-5xl items-center">
+				<div class="flex flex-col items-center"> <img style="width: 10rem;" class="flex m-1"
+						src="images/charlie_white_0.png" />
+					<div class="m-2" 0>
 
-			</div>
-			<!-- <hr /> -->
-			<div class="row">
-				<div class="col-12">
+						<a href="https://www.facebook.com/charlieputh" target="_blank"
+							class="w-9 h-10 text-center border-current border-2 text-blue-500 hover:text-black pt-1 inline-block"><img
+								src="cpphotos/logos/Facebook-logo.png" alt=""></a>
 
-					<!-- Contact -->
-					<section class="contact">
-						<div style="text-align: center;">
-							<h5 style="text-align: center;">Music,video & images are subject to copyright.</h5>
-							<h5 style="text-align: center; ">© 2022
-								<a href="https://www.charlieputh.com/" target="_blank" style="color: rgb(0, 0, 255);">
-									CHARLIE PUTH</a>
-							</h5>
-						</div>
-						<!-- <header>
-                    <h3>Nisl turpis nascetur interdum?</h3>
-                  </header>
-                  <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p> -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/charlieputh" target="_blank"
-									class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/charlieputh" target="_blank"
-									class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/charlieputh/" target="_blank"
-									class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li> -->
-						</ul>
-					</section>
+						<a href="https://www.instagram.com/charlieputh/" target="_blank"
+							class="w-9 h-10 text-center border-current border-2 text-rose-400 hover:text-black pt-1 inline-block"><img
+								src="cpphotos/logos/Instagram-Logo-removebg-preview.png" alt=""></a>
 
-					<!-- Copyright -->
-					<div class="copyright">
-						<ul>
-							<li>Copyright &copy; 2021-2022 <a style="color: white;"
-									href="https://theuniversaldev.42web.io/">THE UNIVERSAL DEV</a>.<br> All rights
-								reserved.</li>
-							<li>Designed, Developed & Maintained by :<br> <a style="color: white;"
-									href="https://theuniversaldev.42web.io/">THE UNIVERSAL DEV</a></li>
-						</ul>
+						<a href="https://twitter.com/charlieputh" target="_blank"
+							class="w-9 h-10 text-center border-current border-2 text-blue-400 hover:text-black pt-1 inline-block"><img
+								src="cpphotos/logos/Twitter-logo-removebg-preview.png" alt=""></a>
+
+						<a href="https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7" target="_blank"
+							class="w-9 h-10 text-center border-current border-2 text-green-500 hover:text-black pt-1 inline-block"><img
+								src="cpphotos/logos/Spotify-logo.png" alt=""></a>
+
+						<a href="https://music.apple.com/in/artist/336249253?ign-itscg=30440&ign-itsct=catchall_p1&uo=4"
+							target="_blank"
+							class="w-9 h-10 text-center border-current border-2 text-rose-600 hover:text-black pt-1 inline-block"><img
+								src="cpphotos/logos/apple-music-removebg-preview.png" alt=""></a>
+
+
 					</div>
-
+					<div class="flex md:flex-row flex-col">
+						<p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="index.html">Home</a> </p>
+						<p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a
+								href="charlieputhbio.html">Bio</a> </p>
+						<p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="musicvideo.html">Music +
+								Video</a> </p>
+						<p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a
+								href="https://www.theuniversaldev.42web.io" target="_blank">Contact Us</a> </p>
+						<!-- <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="#"> Privacy Policy </a> </p> -->
+					</div>
+					<div style="text-align: center;" class="text-gray-100 font-medium mt-4 text-xs">&copy;
+						<script>document.write("" + new Date().getFullYear(), "");</script>
+						<a href="https://www.charlieputh.com" target="_blank" class="text-blue-600">Charlie Puth</a>
+						<br>
+						<h1 class="text-gray-100">All credits to Charlie & his team.</h1>
+						&copy;
+						<script>document.write("" + new Date().getFullYear(), "");</script>
+						<a href="https://www.theuniversaldev.42web.io" target="_blank" class="text-blue-600">THE
+							UNIVERSAL DEV &trade;</a>
+						<h1 class="text-gray-100">All rights reserved</h1>
+					</div>
 				</div>
-
 			</div>
 		</div>
-	</div>
+		<script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+		<script src="https://cdn.tailwindcss.com"></script>
 
 	</div>
-	<!-- ye script effect ki hai  -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			offset: 200, duration: 700
-		});
-	</script>
+
+
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>

@@ -1,105 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>This website will be back on October 7th.</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-            *{
-                font-family: 'Fugaz One', cursive;
-            }
-            </style>
-            
-    </head>
-    <body>
-        <!-- Background Video-->
-        <!-- <img src="leftandrightgif.gif" alt="CP"> -->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/leftandrightgif.mp4" type="video/mp4" /></video>
-        <!-- Masthead -->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 style="font-family: 'Fugaz One', cursive; font-style: italic; font-size:2.5rem;">This website will be back soon.</h1>
-                    <div style="text-align: center; text-decoration: none;">
-                        <a href="https://charlieputh.lnk.to/CHARLIEID" target="_blank" style="text-decoration: none; border: 3px solid white; border-radius: 2px; color: white; background-color: black; padding: 5px; letter-spacing: 2mm; margin-bottom: 50px;">Listen to CHARLIE</a>
-                    </div>
-                    <br>
-                    <div>
+<head>
+    <title>CHARLIE PUTH | THE UNIVERSAL DEV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <!-- my css -->
+    <link rel="stylesheet" href="charlie.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-                   
+    <!-- loader css -->
+    <style>
+        /* body{
+            background-color: black ;
+        }
+         */
+        #preloader {
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            z-index: 100;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        #preloader img {
+            width: 300px;
+        }
+
+        #fullpagecontent {
+            display: none;
+
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.getElementById('preloader').style.display = "none";
+            document.getElementById('fullpagecontent').style.display = "block";
+        }
+    </script>
+
+</head>
+
+<body class="homepage ">
+
+    <div id="preloader">
+        <!-- <img src="photos/logoTUD.png" alt="loader"> -->
+        <!-- <h2> ooh ur still alive</h2> -->
+        <img src="loading.gif" alt="loader">
+    </div>
+    <!-- this is loader div for content -->
+    <div id="fullpagecontent">
+
+        <!-- <div id="page-wrapper"> -->
+
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Inner -->
+            <div class="inner">
+                <header>
+                    <img id="logo" style="width: 20rem;" src="images/CharliePuthoneline-White.gif" alt="">
+                    <img style="width: 20rem;" src="images/Charlie.gif" alt="" id="logo">
+                </header>
+            </div>
+
+            <!-- Inner -->
+            <!-- <div class="inner">
+                <header>
+                    <h1><a href="#" id="logo">Charlie Puth</a></h1>
+                    <hr>
+                    <p>Another fine freebie by HTML5 UP</p>
+                </header>
+                <footer>
+                    <a href="#banner" class="button circled scrolly">Welcome</a>
+                </footer>
+            </div> -->
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="charlieputhbio.html">Bio</a></li> -->
+                    <li>
+                        <a href="musicvideo.html">Music + Video</a>
+                        <!-- <ul>
+                            <li><a href="musicvideo.html">Music + Video</a></li>
+
+                            <li>
+                                <a href="#">Albums &#8594;</a>
+
+                                <ul>
+                                    <li><a href="CHARLIE.html">CHARLIE</a></li>
+                                    <li><a href="leftandright.html">Left And Right (feat. Jung Kook of BTS)</a></li>
+                                    <li><a href="thatshilarious.html">That's Hilarious</a></li>
+                                    <li><a href="lightswitch.html">Light Switch</a></li>
+                                    <li><a href="hard-on-your-self.html">Hard On Yourself</a></li>
+                                    <li><a href="girlfriend.html">Girlfriend</a></li>
+                                    <li><a href="free.html">Free</a></li>
+                                    <li><a href="ihope.html">I hope</a></li>
+                                    <li><a href="mother.html">Mother</a></li>
+                                    <li><a href="cheating-on-you.html">Cheating On You</a></li>
+                                    <li><a href="i-warned-myself.html">I Warned Myself</a></li>
+                                    <li><a href="see-you-again.html">See You Again</a></li>
+                                    <li><a href="voicenotes.html">Voicenotes</a></li>
+                                    <li><a href="ninetrackmind.html">Nine Track Mind (Deluxe)</a></li>
+                                    <li><a href="sometypeoflove.html">Some Type Of Love EP</a></li>
+                                    <li><a href="other.html">Other Albums</a></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li><a href="writen-by-CP.html">Written By Charlie Puth</a></li>
+                    <li><a href="https://www.charlieputh.com/" target="_blank">charlieputh.com</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
 
 
-                        <img style="width: 100%;" src="charlie_white_0.png" alt="">
-                        <h3 style="text-align: center; font-family: 'Fugaz One';" >&copy; THE UNIVERSAL DEV</h3>
-                    </div>
-                    
-                    <!-- <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p> -->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN"> -->
-                        <!-- Email address input-->
-                        <!-- <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                        </div> -->
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
+        <!-- Banner
+        <section id="banner">
+            <header>
+                <h2>Hi. You're looking at <strong>CHARLIE PUTH</strong>.</h2>
+                <p>
+                    A responsive website by <a href="https://theuniversaldev.42web.io" target="_blank">THE UNIVERSAL
+                        DEV</a>.
+                </p>
+            </header>
+        </section> -->
+
+        <div style="background-color: black;">
+            <img class="homeimg" src="images/charlie1500x500.jpg" alt="img charlie puth">
+            <img class="homeimg" src="images/leftandright.jpg" alt="img charlie puth">
+            <!-- <img class="homeimg" src="cpphotos/thatshilariousbig.jpg" alt="img charlie puth"> -->
+        </div>
+
+        <div style="background-color: black;">
+            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <!-- <h2 class="sr-only">Albums</h2> -->
+                <div style="margin: auto; text-align: center;">
+                    <img style="height: 10rem;" src="images/Merch-horizontalDesktop.gif" alt="">
+                </div>
+
+                <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+
+
+                    <a href="https://shop.charlieputh.com/" target="_blank" class="group">
+                        <div
+                            class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+
+                            <img src="images/merch-charlie.gif" alt="Charlie Merch."
+                                class="w-full h-full object-center object-cover group-hover:opacity-75">
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+                        <!-- <span style="margin-top: 10px;" class="mt-4 text-sm text-gray-100">ORDER NOW</span> -->
+                        <p class="mt-1 text-lg font-medium text-gray-100">shop.charlieputh.com
+                        </p>
+                    </a>
+
+                    <a href="https://shop.charlieputh.com/products/charlie-left-and-right-t-shirt-cd-boxset"
+                        target="_blank" class="group">
+                        <div
+                            class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+
+                            <img src="images/CP-Charlie_ProductImages-Boxset2_576x.png" alt="Charlie Merch."
+                                class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <span style="margin-top: 10px;" class="mt-4 text-sm text-gray-100">ORDER NOW</span>
+                        <p class="mt-1 text-lg font-medium text-gray-100">CHARLIE Left and Right T-Shirt CD Boxset</p>
+                    </a>
+
+                    <a href="https://shop.charlieputh.com/products/charlie-puth-feat-jung-kook-of-bts-limited-edition-cd"
+                        target="_blank" class="group">
+                        <div
+                            class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+
+                            <img src="images/061422_CP-LR_Mailer-CD.gif" alt="Charlie Merch."
+                                class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <span style="margin-top: 10px;" class="mt-4 text-sm text-gray-100">ORDER NOW</span>
+                        <p class="mt-1 text-lg font-medium text-gray-100">Charlie Puth Left and Right (feat. Jung Kook
+                            of BTS) Limited Edition CD Single</p>
+                    </a>
+
+                    <a href="https://shop.charlieputh.com/products/charlie-standard-cd" target="_blank" class="group">
+                        <div
+                            class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+
+                            <img src="images/070522_CP-Charlie_ProductImages-Music_Jewelcase_360x.png"
+                                alt="Charlie Merch."
+                                class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <span style="margin-top: 10px;" class="mt-4 text-sm text-gray-100">ORDER NOW</span>
+                        <p class="mt-1 text-lg font-medium text-gray-100">CHARLIE Standard CD</p>
+                    </a>
+
                 </div>
             </div>
         </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <!-- <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+
+
+
+        <div style="background-color: black ; text-align: center;">
+            <h2 style="color: white;font-weight: 200; font-size: 2rem;">CHARLIE The Album</h2>
+            <div class="flex flex-col items-center">
+                <img style="width: 30rem;" class="flex m-1" src="images/Charlie.gif" />
             </div>
-        </div> -->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+
+            <a href="CHARLIE.html" target="_blank">
+                <button class="getitnow">
+                    <span>LISTEN NOW</a></span>
+        </div>
+
+
+
+        <!-- <video width="100%" height="100%" class="bg video" autoplay muted loop>
+            <source src="cpvideo/cpmv.mp4" type="video/mp4">
+        </video> -->
+        <!-- Main -->
+
+
+
+        <!-- <div style="background-color: black;" class="wrapper style2"> -->
+
+        <!-- <article id="main" class="container special"> -->
+        <!-- <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a> -->
+        <!-- <header>
+
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/a7GITgqwDVg"
+                        title="Charlie Puth - Left And Right (feat. Jung Kook of BTS) [Official Video]" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2><a style="color: white;" href="https://youtu.be/Nq3x1AkwgpY" target="_blank">Charlie Puth - Left
+                            And Right (feat. Jung Kook of BTS) [Official Video]</a></h2>
+                    <p>
+                        Released on June 24, 2022
+                    </p>
+
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/Nq3x1AkwgpY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2><a style="color: white;" href="https://youtu.be/Nq3x1AkwgpY" target="_blank">Charlie Puth -
+                            That's Hilarious [Official
+                            Video]</a></h2>
+                    <p>
+                        Released on May 4, 2022
+                    </p>
+
+
+                    <iframe width="100%" height="551" src="https://www.youtube.com/embed/WFsAon_TWPQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2><a style="color: white;" href="https://youtu.be/WFsAon_TWPQ" target="_blank">Charlie Puth -
+                            Light Switch [Official
+                            Music Video]</a></h2>
+                    <p>
+                        Released on Jan 20, 2022
+                    </p>
+                </header> -->
+        <!-- <p>
+                    Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere accumsan
+                    massa
+                    posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla convallis ut venenatis
+                    purus
+                    sit arcu sociis. Nunc fermentum adipiscing tempor cursus nascetur adipiscing adipiscing. Primis
+                    aliquam
+                    mus lacinia lobortis phasellus suscipit. Fermentum lobortis non tristique ante proin sociis accumsan
+                    lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum
+                    consequat integer interdum integer purus sapien. Nibh eleifend nulla nascetur pharetra commodo mi
+                    augue
+                    interdum tellus. Ornare cursus augue feugiat sodales velit lorem. Semper elementum ullamcorper
+                    lacinia
+                    natoque aenean scelerisque.
+                </p>
+                <footer>
+                    <a href="#" class="button">Continue Reading</a>
+                </footer> -->
+        <!-- </article> -->
+        <!-- </div> -->
+
+
+        <!-- Features -->
+        <div style="background-color: black; color: white;" class="wrapper style1">
+
+            <section id="features" class="container special">
+                <header>
+                    <h2 style="color: white; font-size: 2rem;">Featured Songs</h2>
+                    <!-- <p>Ipsum volutpat consectetur orci metus consequat imperdiet duis integer semper magna.</p> -->
+                </header>
+                <div class="row">
+                    <article class="col-4 col-12-mobile special">
+                        <!-- <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a> -->
+                        <iframe width="100%" height="256" src="https://www.youtube.com/embed/RgKAFK5djSk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <header>
+                        </header>
+                        <p>
+                            Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack
+                        </p>
+                        <a href="https://atlantic.lnk.to/SeeYouAgainAW" target="_blank">
+                            <button class="getitnow">
+                                <span>GET IT NOW</a></span>
+                        </button>
+                    </article>
+                    <article class="col-4 col-12-mobile special">
+                        <!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+                        <iframe width="100%" height="256" src="https://www.youtube.com/embed/3AtDnEC4zak"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p>
+                            Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video]
+                        </p>
+                        <a href="https://atlantic.lnk.to/NineTrackMindAW" target="_blank">
+                            <button class="getitnow">
+                                <span>GET IT NOW</a></span>
+                        </button>
+                    </article>
+                    <article class="col-4 col-12-mobile special">
+                        <!-- <a href="" class="image featured"> yaha pe image lag jayegi </a> -->
+                        <iframe width="100%" height="256" src="https://www.youtube.com/embed/nfs8NYg7yQM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p>
+                            Charlie Puth - Attention [Official Video]
+                        </p>
+                        <a href="https://atlantic.lnk.to/VoicenotesAW" target="_blank">
+                            <button class="getitnow">
+                                <span>GET IT NOW</a></span>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- footer -->
+
+        <div style="background-color: black;" class="flex items-center justify-center">
+            <div class="m-2 max-w-5xl items-center">
+                <div class="flex flex-col items-center"> <img style="width: 10rem;" class="flex m-1"
+                        src="images/CharliePuthoneline-White.gif" />
+                    <div class="m-2" 0>
+
+                        <a href="https://www.facebook.com/charlieputh" target="_blank"
+                            class="w-9 h-10 text-center border-current border-2 text-blue-500 hover:text-black pt-1 inline-block"><img
+                                src="cpphotos/logos/Facebook-logo.png" alt=""></a>
+
+                        <a href="https://www.instagram.com/charlieputh/" target="_blank"
+                            class="w-9 h-10 text-center border-current border-2 text-rose-400 hover:text-black pt-1 inline-block"><img
+                                src="cpphotos/logos/Instagram-Logo-removebg-preview.png" alt=""></a>
+
+                        <a href="https://twitter.com/charlieputh" target="_blank"
+                            class="w-9 h-10 text-center border-current border-2 text-blue-400 hover:text-black pt-1 inline-block"><img
+                                src="cpphotos/logos/Twitter-logo-removebg-preview.png" alt=""></a>
+
+                        <a href="https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7" target="_blank"
+                            class="w-9 h-10 text-center border-current border-2 text-green-500 hover:text-black pt-1 inline-block"><img
+                                src="cpphotos/logos/Spotify-logo.png" alt=""></a>
+
+                        <a href="https://music.apple.com/in/artist/336249253?ign-itscg=30440&ign-itsct=catchall_p1&uo=4"
+                            target="_blank"
+                            class="w-9 h-10 text-center border-current border-2 text-rose-600 hover:text-black pt-1 inline-block"><img
+                                src="cpphotos/logos/apple-music-removebg-preview.png" alt=""></a>
+
+
+                    </div>
+                    <div class="flex md:flex-row flex-col">
+                        <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="index.html">Home</a> </p>
+                        <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a
+                                href="charlieputhbio.html">Bio</a> </p>
+                        <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="musicvideo.html">Music +
+                                Video</a> </p>
+                        <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a
+                                href="https://www.theuniversaldev.42web.io" target="_blank">Contact Us</a> </p>
+                        <!-- <p class="hover:text-blue-600 text-gray-500 font-medium m-2"> <a href="#"> Privacy Policy </a> </p> -->
+                    </div>
+                    <div style="text-align: center;" class="text-gray-100 font-medium mt-4 text-xs">&copy;
+                        <script>document.write("" + new Date().getFullYear(), "");</script>
+                        <a href="https://www.charlieputh.com" target="_blank" class="text-blue-600">Charlie Puth</a>
+                        <br>
+                        <h1 class="text-gray-100">All credits to Charlie & his team.</h1>
+                        &copy;
+                        <script>document.write("" + new Date().getFullYear(), "");</script>
+                        <a href="https://www.theuniversaldev.42web.io" target="_blank" class="text-blue-600">THE
+                            UNIVERSAL DEV &trade;</a>
+
+                        <h1 class="text-gray-100">All rights reserved</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
