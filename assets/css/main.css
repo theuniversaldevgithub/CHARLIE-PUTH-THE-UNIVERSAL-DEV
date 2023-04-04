@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto&family=Roboto+Condensed:ital,wght@1,700&family=Teko:wght@500;700&display=swap');
-@import url("fontawesome-all.min.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto&family=Roboto+Condensed:ital,wght@1,700&family=Teko:wght@500;700&display=swap');
+@import url("fontawesome-all.min.css"); */
 
-/*
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
+@font-face {
+    font-family: CPfont;
+    src: url(../../icomoon.ttf)
+}
 html,
 body,
 div,
@@ -115,7 +113,7 @@ section {
 
 body {
 	line-height: 1;
-	font-family: 'Teko', sans-serif;
+	font-family: CPfont;
 }
 
 ol,
@@ -2306,7 +2304,7 @@ header .icon.circled {
 
 #header {
 	position: relative;
-	background-image: url("../../images/ezgif-3-1ded4e322e.gif");
+	background-image: url("../../images/tnhtw.webp");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
