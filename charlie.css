@@ -36,14 +36,14 @@ body{
     content: "";
     background: linear-gradient(
       45deg,
-      #ff0000,
-      #ff7300,
-      #590600,
-      #ff0000,
-      #f98b05,
-      #dd7e09,
+      #e5e4e4,
+      #756023,
+      #910704,
+      #74532d,
+      #e9bd79,
+      #e9bd79,
       #ff3300,
-      #590600,
+      #af644b,
       rgb(215, 83, 12)
       /* #ff0000,
       #ff7300,
@@ -100,7 +100,7 @@ body{
     width: 100%;
     height: 100%;
     /* background: #191919; */
-    background-image: url("images/lipstick-art.jfif");
+    background-image: url("images/heroHeader@3x.jpg");
     left: 0;
     top: 0;
     border-radius: 10px;
